@@ -21,10 +21,12 @@ public class Player : MonoBehaviour {
 			GetComponent<Rigidbody2D>().AddForce(new Vector2(MovementSpeed, 0));
 		}
 		//Speed limit via velocity
+        var rb = GetComponent<Rigidbody2D>();
+
 		if(GetComponent<Rigidbody2D>().velocity.x < -SpeedLimit){
-			GetComponent<Rigidbody2D>().velocity.x = -SpeedLimit;
+			rb.velocity = new Vector2(-SpeedLimit,rb.velocity.y);
 		} else if(GetComponent<Rigidbody2D>().velocity.x > SpeedLimit){
-			GetComponent<Rigidbody2D>().velocity.x = SpeedLimit;
+            rb.velocity = new Vector2(SpeedLimit, rb.velocity.y);
 		}
 		//jump (via massive upwards acceleration)
 		if(Input.GetKeyDown("space")){
