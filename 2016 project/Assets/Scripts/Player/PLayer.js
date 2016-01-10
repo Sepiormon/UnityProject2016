@@ -42,3 +42,9 @@ function OnCollisionExit2D (other: Collision2D){
 		OnGround = false; //if leaving ground, make false
 	}
 }
+
+function OnCollisionStay2D (other : Collision2D){
+	if(other.gameObject.tag == "Ground"){
+		OnGround = true; //Still on the ground.
+	}
+}

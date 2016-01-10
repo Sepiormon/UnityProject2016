@@ -50,6 +50,14 @@ public class Player : MonoBehaviour {
 		}
 	}
 
+	void OnCollisionStay2D(Collision2D other)
+	{
+		if(other.gameObject.tag == "Ground")
+		{
+			OnGround = true; //Still on the ground.
+		}
+	}
+
 	void OnCollisionExit2D (Collision2D other)
 	{
 		if(other.gameObject.tag == "Ground")
