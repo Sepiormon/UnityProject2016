@@ -196,6 +196,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 331741766}
   - 212: {fileID: 331741765}
+  - 114: {fileID: 331741767}
   m_Layer: 0
   m_Name: New Sprite (2)
   m_TagString: Untagged
@@ -245,6 +246,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!114 &331741767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 331741764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 237e1152b71e60544b10720cb39fb26f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 1701868668}
 --- !u!1 &730799466
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,7 +682,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1701868668}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.2, y: 1.51, z: 0}
+  m_LocalPosition: {x: -0.86, y: 1.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1951285710}
