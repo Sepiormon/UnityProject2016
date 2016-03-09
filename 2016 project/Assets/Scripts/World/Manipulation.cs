@@ -12,7 +12,6 @@ public class Manipulation : MonoBehaviour {
 
 	void Start()
 	{	
-		Debug.Log("why2");
 		DefMat = GetComponent<Renderer>().material;
 		Lite = new GameObject("Manipulatior Light");
 		Light liteComp = Lite.AddComponent<Light>();
